@@ -43,24 +43,21 @@ class CustomViewController: UIViewController {
         if reloadTextField {
             return
         }
-        
-        var buttonType: String = ""
-        
-        if let operType = sender.restorationIdentifier {
-            buttonType = operType
+        guard let operType = sender.restorationIdentifier else {
+            return
         }
         
         reloadTextField = true
         let numberInField = workField.text!
     
         if operStack.count == 1 {
-            operStack.append(buttonType)
+            operStack.append(operType)
             return
         }
         
         if operStack.isEmpty {
             operStack.append(numberInField)
-            operStack.append(buttonType)
+            operStack.append(operType)
         } else {
             operStack.append(numberInField)
             
@@ -86,7 +83,7 @@ class CustomViewController: UIViewController {
                 break
             }
             
-            if buttonType == "equalSign" {
+            if operType == "equalSign" {
                 workField.text = String(result)
                 operStack.removeAll()
                 operStack.append(workField.text!)
@@ -98,7 +95,7 @@ class CustomViewController: UIViewController {
             operStack[0] = String(result)
             
             if buttonType != "equalSign" {
-                operStack[1] = buttonType
+                operStack[1] = operType
             }
             
             operStack.removeLast()
