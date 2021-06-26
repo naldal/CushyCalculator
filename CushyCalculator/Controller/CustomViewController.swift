@@ -89,18 +89,14 @@ class CustomViewController: UIViewController {
                 operStack.append(workField.text!)
                 reloadTextField = false
                 return
+            } else if operType != "equalSign" {
+                operStack[1] = operType
             }
             
             workField.text = String(result)
             operStack[0] = String(result)
-            
-            if operType != "equalSign" {
-                operStack[1] = operType
-            }
-            
+        
             operStack.removeLast()
-                
-            
         }
     }
 
