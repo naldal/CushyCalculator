@@ -15,7 +15,6 @@
 		DA8B30302684548200C1CB4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B302E2684548200C1CB4C /* Main.storyboard */; };
 		DA8B30322684548300C1CB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8B30312684548300C1CB4C /* Assets.xcassets */; };
 		DA8B30352684548300C1CB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B30332684548300C1CB4C /* LaunchScreen.storyboard */; };
-		DA8B303D26845A0E00C1CB4C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B303C26845A0E00C1CB4C /* RoundButton.swift */; };
 		DAD6D3D726846BE4008DD761 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6D3D626846BE4008DD761 /* CustomViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		DA8B30312684548300C1CB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8B30342684548300C1CB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8B30362684548300C1CB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA8B303C26845A0E00C1CB4C /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		DAD6D3D626846BE4008DD761 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +43,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA5C612826872EF300D121B9 /* Designable */ = {
+			isa = PBXGroup;
+			children = (
+				DA238E822685C7A5006403F1 /* CircleButton.swift */,
+			);
+			path = Designable;
+			sourceTree = "<group>";
+		};
+		DA5C612926872F0200D121B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DAD6D3D626846BE4008DD761 /* CustomViewController.swift */,
+				DA54D26726870CDA00E59399 /* ModalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA5C612A26872F2400D121B9 /* CustomDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DA54D26526870AAA00E59399 /* DeletedData.swift */,
+			);
+			path = CustomDelegate;
+			sourceTree = "<group>";
+		};
 		DA8B301C2684548200C1CB4C = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +87,15 @@
 		DA8B30272684548200C1CB4C /* CushyCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				DA5C612A26872F2400D121B9 /* CustomDelegate */,
+				DA5C612926872F0200D121B9 /* Controller */,
+				DA5C612826872EF300D121B9 /* Designable */,
 				DA8B30282684548200C1CB4C /* AppDelegate.swift */,
 				DA8B302A2684548200C1CB4C /* SceneDelegate.swift */,
-				DA8B303C26845A0E00C1CB4C /* RoundButton.swift */,
 				DA8B302E2684548200C1CB4C /* Main.storyboard */,
 				DA8B30312684548300C1CB4C /* Assets.xcassets */,
 				DA8B30332684548300C1CB4C /* LaunchScreen.storyboard */,
 				DA8B30362684548300C1CB4C /* Info.plist */,
-				DAD6D3D626846BE4008DD761 /* CustomViewController.swift */,
-				DA238E822685C7A5006403F1 /* CircleButton.swift */,
-				DA54D26526870AAA00E59399 /* DeletedData.swift */,
-				DA54D26726870CDA00E59399 /* ModalViewController.swift */,
 			);
 			path = CushyCalculator;
 			sourceTree = "<group>";
@@ -149,7 +170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8B303D26845A0E00C1CB4C /* RoundButton.swift in Sources */,
 				DA54D26626870AAA00E59399 /* DeletedData.swift in Sources */,
 				DAD6D3D726846BE4008DD761 /* CustomViewController.swift in Sources */,
 				DA238E832685C7A5006403F1 /* CircleButton.swift in Sources */,
