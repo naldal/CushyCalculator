@@ -60,14 +60,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DA5C612A26872F2400D121B9 /* CustomDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				DA54D26526870AAA00E59399 /* DeletedData.swift */,
-			);
-			path = CustomDelegate;
-			sourceTree = "<group>";
-		};
 		DA8B301C2684548200C1CB4C = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +79,7 @@
 		DA8B30272684548200C1CB4C /* CushyCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				DA5C612A26872F2400D121B9 /* CustomDelegate */,
+				DA54D26526870AAA00E59399 /* DeletedData.swift */,
 				DA5C612926872F0200D121B9 /* Controller */,
 				DA5C612826872EF300D121B9 /* Designable */,
 				DA8B30282684548200C1CB4C /* AppDelegate.swift */,

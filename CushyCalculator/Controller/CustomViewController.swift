@@ -44,57 +44,65 @@ class CustomViewController: UIViewController {
             return
         }
         
+        var buttonType: String = ""
+        
+        if let operType = sender.restorationIdentifier {
+            buttonType = operType
+        }
+        
         reloadTextField = true
         let numberInField = workField.text!
     
         if operStack.count == 1 {
-            if let senderIdentifier = sender.restorationIdentifier {
-                operStack.append(senderIdentifier)
-            }
+            operStack.append(buttonType)
             return
         }
         
         if operStack.isEmpty {
             operStack.append(numberInField)
-            if let senderIdentifier = sender.restorationIdentifier {
-                operStack.append(senderIdentifier)
-            }
+            operStack.append(buttonType)
         } else {
             operStack.append(numberInField)
-            if let operType = sender.restorationIdentifier {
-                let first = Double(operStack[0])!
-                let middleOperator = operStack[1]
-                let second = Double(operStack[2])!
-                
-                var result: Double = Double(InitialCalculator)!
-                switch middleOperator {
-                case "plus":
-                    result = first + second
-                case "minus":
-                    result = first - second
-                case "multi":
-                    result = first * second
-                case "divide":
-                    result = first / second
-                default:
-                    break
-                }
-                if operType == "equalSign" {
-                    workField.text = String(result)
-                    operStack.removeAll()
-                    operStack.append(workField.text!)
-                    reloadTextField = false
-                    return
-                }
-                
-                workField.text = String(result)
-                operStack[0] = String(result)
-                if operType != "equalSign" {
-                    operStack[1] = operType
-                }
-                operStack.removeLast()
-                
+            
+            guard let first = Double(operStack[0]) else {
+                return
             }
+            let middleOperator = operStack[1]
+            
+            guard let second = Double(operStack[2]) else {
+                return
+            }
+    
+            
+            var result: Double = Double(InitialCalculator)!
+            switch middleOperator {
+            case "plus":
+                result = first + second
+            case "minus":
+                result = first - second
+            case "multi":
+                result = first * second
+            case "divide":
+                result = first / second
+            default:
+                break
+            }
+            if buttonType == "equalSign" {
+                workField.text = String(result)
+                operStack.removeAll()
+                operStack.append(workField.text!)
+                reloadTextField = false
+                return
+            }
+            
+            workField.text = String(result)
+            operStack[0] = String(result)
+            if buttonType != "equalSign" {
+                operStack[1] = buttonType
+            }
+            operStack.removeLast()
+                
+            
         }
     }
 
