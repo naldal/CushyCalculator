@@ -67,12 +67,10 @@ class CustomViewController: UIViewController {
             guard let first = Double(operStack[0]) else {
                 return
             }
-            let middleOperator = operStack[1]
-            
             guard let second = Double(operStack[2]) else {
                 return
             }
-    
+            let middleOperator = operStack[1]
             
             var result: Double = Double(InitialCalculator)!
             switch middleOperator {
@@ -87,6 +85,7 @@ class CustomViewController: UIViewController {
             default:
                 break
             }
+            
             if buttonType == "equalSign" {
                 workField.text = String(result)
                 operStack.removeAll()
@@ -97,9 +96,11 @@ class CustomViewController: UIViewController {
             
             workField.text = String(result)
             operStack[0] = String(result)
+            
             if buttonType != "equalSign" {
                 operStack[1] = buttonType
             }
+            
             operStack.removeLast()
                 
             
