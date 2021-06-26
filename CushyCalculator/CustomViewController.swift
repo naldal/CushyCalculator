@@ -46,15 +46,19 @@ class CustomViewController: UIViewController {
         
         reloadTextField = true
         let numberInField = workField.text!
-        
+    
         if operStack.count == 1 {
-            operStack.append((sender.restorationIdentifier)!)
+            if let senderIdentifier = sender.restorationIdentifier {
+                operStack.append(senderIdentifier)
+            }
             return
         }
         
         if operStack.isEmpty {
             operStack.append(numberInField)
-            operStack.append((sender.restorationIdentifier)!)
+            if let senderIdentifier = sender.restorationIdentifier {
+                operStack.append(senderIdentifier)
+            }
         } else {
             operStack.append(numberInField)
             if let operType = sender.restorationIdentifier {
