@@ -8,32 +8,30 @@ class CustomViewController: UIViewController {
     var result: Int = 0
     var operation = ""
     var reloadTextField = false
+    let InitialCalculator: String = "0"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         workField.adjustsFontSizeToFitWidth = true
-        workField.text = "0"
+        workField.text = InitialCalculator
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? ModalViewController {
-            print(vc)
             vc.delegate = self
         }
     }
     
-    @IBAction func pressedButton(_ sender: Any) {
-        let btn = sender as? UIButton
-        
-        if let numberPad = btn?.currentTitle {
+    @IBAction func pressedButton(_ sender: UIButton) {
+        if let numberPad = sender.currentTitle {
             if reloadTextField {
                 workField.text! = String(numberPad)
                 reloadTextField = false
                 return
             }
             let currnetField = workField.text!
-            if currnetField != "0" {
+            if currnetField != InitialCalculator {
                 workField.text! += String(numberPad)
             } else {
                 workField.text! = String(numberPad)
@@ -41,31 +39,30 @@ class CustomViewController: UIViewController {
         }
     }
     
-    @IBAction func operatorButton(_ sender: Any) {
+    @IBAction func operatorButton(_ sender: UIButton) {
         if reloadTextField {
             return
         }
         
         reloadTextField = true
-        let btn = sender as? UIButton
         let numberInField = workField.text!
         
         if operStack.count == 1 {
-            operStack.append((btn?.restorationIdentifier)!)
+            operStack.append((sender.restorationIdentifier)!)
             return
         }
         
         if operStack.isEmpty {
             operStack.append(numberInField)
-            operStack.append((btn?.restorationIdentifier)!)
+            operStack.append((sender.restorationIdentifier)!)
         } else {
             operStack.append(numberInField)
-            if let operType = btn?.restorationIdentifier {
+            if let operType = sender.restorationIdentifier {
                 let first = Double(operStack[0])!
                 let middleOperator = operStack[1]
                 let second = Double(operStack[2])!
                 
-                var result: Double = 0
+                var result: Double = Double(InitialCalculator)!
                 switch middleOperator {
                 case "plus":
                     result = first + second
@@ -116,7 +113,7 @@ class CustomViewController: UIViewController {
     
     @IBAction func clearBtn(_ sender: Any) {
         DeletedData.deleted.append(workField.text!)
-        workField.text = "0"
+        workField.text = InitialCalculator
         operStack.removeAll()
     }
 }
@@ -125,6 +122,7 @@ extension CustomViewController: MoveDataDelegate {
     func moveData(_ vc: UIViewController, didInput value: String?) {
         workField.text = value
         operStack.removeAll()
+        operStack.append(value!)
     }
     
 }
