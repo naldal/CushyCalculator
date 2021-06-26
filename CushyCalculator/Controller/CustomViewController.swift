@@ -94,7 +94,7 @@ class CustomViewController: UIViewController {
             workField.text = String(result)
             operStack[0] = String(result)
             
-            if buttonType != "equalSign" {
+            if operType != "equalSign" {
                 operStack[1] = operType
             }
             
