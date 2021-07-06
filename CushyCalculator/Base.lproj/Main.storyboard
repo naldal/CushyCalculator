@@ -43,6 +43,9 @@
                                                 <state key="normal" title="AC">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="38"/>
@@ -62,6 +65,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                                 <state key="normal" title="±">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -83,6 +89,9 @@
                                                 <state key="normal" title="%">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="38"/>
@@ -101,6 +110,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                                 <state key="normal" title="÷">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="highlighted">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -131,6 +143,9 @@
                                                 <state key="normal" title="7">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="38"/>
@@ -149,6 +164,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <state key="normal" title="8">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="highlighted">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -171,6 +189,9 @@
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="38"/>
@@ -189,6 +210,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                                 <state key="normal" title="×">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="highlighted">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -216,6 +240,9 @@
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="38"/>
@@ -234,6 +261,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <state key="normal" title="5">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="highlighted">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -256,6 +286,9 @@
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="38"/>
@@ -274,6 +307,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                                 <state key="normal" title="−">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="highlighted">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -301,6 +337,9 @@
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="38"/>
@@ -319,6 +358,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <state key="normal" title="2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="highlighted">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -341,6 +383,9 @@
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="38"/>
@@ -359,6 +404,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                                 <state key="normal" title="+">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="highlighted">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -387,6 +435,9 @@
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="38"/>
@@ -407,11 +458,17 @@
                                                 <state key="normal" title=".">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="38"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0AT-ew-qUS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="equalSign" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBA-09-mkY" customClass="CircleButton" customModule="CushyCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="261" y="0.0" width="77" height="77"/>
@@ -422,6 +479,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                                 <state key="normal" title="＝">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="highlighted">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -456,6 +516,25 @@
                     </view>
                     <connections>
                         <outlet property="workField" destination="3PK-6p-FwC" id="glZ-0d-rCk"/>
+                        <outletCollection property="buttons" destination="tNx-Lk-bJD" collectionClass="NSMutableArray" id="RwJ-YJ-mES"/>
+                        <outletCollection property="buttons" destination="qH6-8L-iPZ" collectionClass="NSMutableArray" id="Mgt-38-DFM"/>
+                        <outletCollection property="buttons" destination="bNI-IE-5Wf" collectionClass="NSMutableArray" id="ZGz-tJ-b47"/>
+                        <outletCollection property="buttons" destination="Q5R-4w-YQ2" collectionClass="NSMutableArray" id="yfR-QG-7E4"/>
+                        <outletCollection property="buttons" destination="Rrf-mx-iF9" collectionClass="NSMutableArray" id="wEM-iO-xb5"/>
+                        <outletCollection property="buttons" destination="g6O-uh-cX1" collectionClass="NSMutableArray" id="ffm-eQ-YRG"/>
+                        <outletCollection property="buttons" destination="xkr-q1-JDB" collectionClass="NSMutableArray" id="goH-Vo-x4D"/>
+                        <outletCollection property="buttons" destination="3Hx-eY-caf" collectionClass="NSMutableArray" id="sD7-vg-1r1"/>
+                        <outletCollection property="buttons" destination="2Z0-Ez-LVh" collectionClass="NSMutableArray" id="ZIx-nC-Cau"/>
+                        <outletCollection property="buttons" destination="5de-6j-HAS" collectionClass="NSMutableArray" id="hxo-nL-uFo"/>
+                        <outletCollection property="buttons" destination="FAM-tt-kgl" collectionClass="NSMutableArray" id="mrg-pm-CNb"/>
+                        <outletCollection property="buttons" destination="Brp-yQ-Zgy" collectionClass="NSMutableArray" id="0Ni-x2-1Ks"/>
+                        <outletCollection property="buttons" destination="vGU-nf-6lw" collectionClass="NSMutableArray" id="Yeu-k9-i1E"/>
+                        <outletCollection property="buttons" destination="nZz-X1-QNn" collectionClass="NSMutableArray" id="zFq-bv-kVa"/>
+                        <outletCollection property="buttons" destination="NXu-XP-r4M" collectionClass="NSMutableArray" id="zzD-jH-tjk"/>
+                        <outletCollection property="buttons" destination="N29-cr-Dlz" collectionClass="NSMutableArray" id="g2K-eT-ubV"/>
+                        <outletCollection property="buttons" destination="fBA-09-mkY" collectionClass="NSMutableArray" id="ewV-iH-6Z1"/>
+                        <outletCollection property="buttons" destination="xxA-eE-eIv" collectionClass="NSMutableArray" id="het-wj-03S"/>
+                        <outletCollection property="buttons" destination="PHf-sw-owg" collectionClass="NSMutableArray" id="xPs-ss-s1g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

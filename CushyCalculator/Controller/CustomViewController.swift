@@ -4,10 +4,13 @@ class CustomViewController: UIViewController {
     
     @IBOutlet weak var workField: UILabel!
     
+    @IBOutlet var buttons: [UIButton]!
+    
     var operStack: [String] = []
     var result: Int = 0
     var operation = ""
     var reloadTextField = false
+    var isDotContains = false
     let InitialCalculator: String = "0"
     
     
@@ -15,6 +18,10 @@ class CustomViewController: UIViewController {
         super.viewDidLoad()
         workField.adjustsFontSizeToFitWidth = true
         workField.text = InitialCalculator
+        
+        buttons.forEach { button in
+            button.setBackgroundColor(.white, for: .highlighted)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -25,6 +32,12 @@ class CustomViewController: UIViewController {
     
     @IBAction func pressedButton(_ sender: UIButton) {
         if let numberPad = sender.currentTitle {
+            if numberPad == "." {
+                guard isDotContains == false else {
+                    return
+                }
+                isDotContains = true
+            }
             if reloadTextField {
                 workField.text! = String(numberPad)
                 reloadTextField = false
@@ -34,12 +47,17 @@ class CustomViewController: UIViewController {
             if currnetField != InitialCalculator {
                 workField.text! += String(numberPad)
             } else {
-                workField.text! = String(numberPad)
+                if numberPad == "." {
+                    workField.text! += String(numberPad)
+                } else {
+                    workField.text! = String(numberPad)
+                }
             }
         }
     }
     
     @IBAction func operatorButton(_ sender: UIButton) {
+        
         if reloadTextField {
             return
         }
@@ -83,8 +101,12 @@ class CustomViewController: UIViewController {
                 break
             }
             
+            var finRes: String = String(result)
+            if result == ceil(result) {
+                finRes.removeSubrange(finRes.firstIndex(of: ".")!..<finRes.endIndex)
+            }
             if operType == "equalSign" {
-                workField.text = String(result)
+                workField.text = finRes
                 operStack.removeAll()
                 operStack.append(workField.text!)
                 reloadTextField = false
@@ -93,22 +115,21 @@ class CustomViewController: UIViewController {
                 operStack[1] = operType
             }
             
-            workField.text = String(result)
-            operStack[0] = String(result)
+            workField.text = finRes
+            operStack[0] = finRes
         
             operStack.removeLast()
         }
     }
 
-    // special Actions
-    @IBAction func percentBtn(_ sender: Any) {
+    @IBAction func percentBtn(_ sender: UIButton) {
         if let num = workField.text {
             let stringifiedNum:Double = Double(num)! * 0.01
             workField.text = String(stringifiedNum)
         }
     }
     
-    @IBAction func plusMinusBtn(_ sender: Any) {
+    @IBAction func plusMinusBtn(_ sender: UIButton) {
         if let num = workField.text {
             workField.text = String(Double(num)! * -1)
             if operStack.count == 1 {
@@ -117,10 +138,11 @@ class CustomViewController: UIViewController {
         }
     }
     
-    @IBAction func clearBtn(_ sender: Any) {
+    @IBAction func clearBtn(_ sender: UIButton) {
         DeletedData.deleted.append(workField.text!)
         workField.text = InitialCalculator
         operStack.removeAll()
+        isDotContains = false
     }
 }
 

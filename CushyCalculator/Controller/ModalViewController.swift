@@ -31,13 +31,11 @@ extension ModalViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = deletedList[indexPath.row]
         return cell
-
     }
 }
 
 extension ModalViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         delegate?.moveData(self, didInput: deletedList[indexPath.row])
         dismiss(animated: true, completion: nil)
     }
