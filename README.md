@@ -1,10 +1,10 @@
 # CushyCalculator
 Made by 송하민 <br>
 계산기 앱 프로젝트 <br><br>
-기간 : 2021.06.24 ~ 07.08 <br>
+<strong>기간 : 2021.06.24 ~ 07.08 <br>
 주제 : 저장가능한 계산기 어플리케이션 개발 <br>
 개발 : Xcode 12.5, GitHub <br>
-사용 언어 및 기술 : Swift(5.4.2), Storyboard <br>
+사용 언어 및 기술 : Swift(5.4.2), Storyboard <br><strong>
 
 --------------
 
