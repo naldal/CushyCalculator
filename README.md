@@ -13,7 +13,7 @@ Made by 송하민 <br>
 ```
   * 계산실수 방지를 위한 계산기 앱
 ```
-
+<br>
 ### 목적
 ```
   1. 기본 계산기 미지원 기능 구현 
@@ -28,7 +28,7 @@ Made by 송하민 <br>
   
     - 실제적인 기능 구현을 통해 개발능력 향상
 ```
-
+<br>
 ### 구현목표
 ```
   * Stack View를 통한 버튼 정렬 및 Target Action 방식의 이벤트 호출
@@ -39,10 +39,10 @@ Made by 송하민 <br>
   
   * Custom Delegate 패턴을 통한 데이터 이동
 ```
-
+<br>
 ### 기능 동작
 
-<img width="38%" src="https://user-images.githubusercontent.com/45508297/127612761-1cd09bbe-df89-44e7-907f-73554941b4bc.gif"/>
+<img width="50%" src="https://user-images.githubusercontent.com/45508297/127612761-1cd09bbe-df89-44e7-907f-73554941b4bc.gif"/>
 
 
 
