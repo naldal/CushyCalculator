@@ -1,4 +1,4 @@
-# 🔢 CushyCalculator
+# 🔢 CushyCalculator 🔢
 
 > 실수로 계산 결과를 지워도 빠르게 복구 가능한 계산기 어플리케이션 프로젝트
 <br>
