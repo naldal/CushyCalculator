@@ -49,7 +49,7 @@
  
 ## 📱 기능 동작
 
-<img width="46%" src="https://user-images.githubusercontent.com/45508297/127612761-1cd09bbe-df89-44e7-907f-73554941b4bc.gif"/>
+<img width="40%" src="https://user-images.githubusercontent.com/45508297/127612761-1cd09bbe-df89-44e7-907f-73554941b4bc.gif"/>
 
 
 
