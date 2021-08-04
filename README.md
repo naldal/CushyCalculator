@@ -5,7 +5,7 @@
 
 기간 : 2021.06.24 ~ 07.08 <br>
 개발환경 : Xcode 12.5, GitHub <br>
-사용 언어 및 기술 : Swift5, Storyboard, AutoLayout <br>
+사용 언어 및 기술 : `Swift5`, `Storyboard`, `AutoLayout` <br>
  
 ------------------------------------------------------------------------
 
