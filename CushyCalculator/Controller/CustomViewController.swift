@@ -147,7 +147,7 @@ class CustomViewController: UIViewController {
 }
 
 extension CustomViewController: MoveDataDelegate {
-    func moveData(_ vc: UIViewController, didInput value: String?) {
+    func moveData(didInput value: String?) {
         workField.text = value
         operStack.removeAll()
         operStack.append(value!)

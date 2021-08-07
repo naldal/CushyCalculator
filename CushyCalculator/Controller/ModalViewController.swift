@@ -9,7 +9,7 @@ import UIKit
 
 
 protocol MoveDataDelegate {
-    func moveData(_ vc: UIViewController, didInput value: String?)
+    func moveData(didInput value: String?)
 }
 
 class ModalViewController: UIViewController {
@@ -36,7 +36,7 @@ extension ModalViewController: UITableViewDataSource {
 
 extension ModalViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.moveData(self, didInput: deletedList[indexPath.row])
+        delegate?.moveData(didInput: deletedList[indexPath.row])
         dismiss(animated: true, completion: nil)
     }
 }
